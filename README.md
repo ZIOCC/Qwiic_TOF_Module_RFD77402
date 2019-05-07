@@ -1,16 +1,56 @@
 # Qwiic_TOF_Module_RFD77402
 
-https://www.smart-prototyping.com/Zio-TOF-Distance-Sensor-RFD77402.html
+![](tof-distance-sensor.png)
 
-This is a great little TOF rangefinder module based on the RFD77402 which has a two-meter range.
+> This product can be available for purchase [here](https://www.smart-prototyping.com/Zio-TOF-Distance-Sensor-RFD77402.html).
 
-Worth noting about this sensor is that it has a fixed I2C address, which means you'll need a <a href="https://www.smart-prototyping.com/Zio-Qwiic-Mux.html">multiplexer</a> or intermediate slave device like a sensor hub, if you want to connect more than one of them to the same bus.
 
-For Arduino users, the best option is Sparkfun's library, to which we've linked from the product page listed above.
 
-Note: As with all of the Version 1.0 Zio Qwiic boards, this board has been produced with the I2C pull-ups disconnected by default. If there's a significant length of wire between this board and your MCU, you'll need to solder closed the solder jumpers (labeled SDA, 3v3 and SCL) to connect the pull-up resistors to VCC.
+#### Description
 
-All Zio products are released under the Creative Commons Attribution, Share-Alike License, and in accordance with the principles of the Open Source Hardware Association's OSHW Statement of Principles 1.0 and OSHW Definition 1.0. https://creativecommons.org/licenses/by-sa/4.0/ (English)<br>
-https://creativecommons.org/licenses/by-sa/4.0/deed.zh (中文)<br>
-https://www.oshwa.org/definition/<br>
-https://www.oshwa.org/definition/chinese/ (中文)<br>
+In the words of a team member, “kind of dope AF”, this Zio ToF Distance Sensor measures distance faster than the Flash can cover it. If you don’t believe us, you can ask him.
+
+This little board features an RFD77402 time-of-flight rangefinding IC, measuring up to 2m in distance. The sensor uses a vertical-cavity surface-emitting laser (or VCSEL), and measures the time it takes for photons to make the round-trip to the laser’s target, and back to the built-in detector. The laser emitter is class 1, therefore safe for most all applications.
+
+We’ve outfitted the board with mounting holes on wing tabs that can be snapped off to create an even smaller board if you don’t need them. Two Qwiic connectors occupy either side of the breakout board so you can quickly and easily daisy-chain it with other modules. It also includes a standard-pitch header for use with projects that aren’t Qwiic-based.
+
+Apply this sensor in a wide-range of applications such as in robotics for obstacle detection and avoidance, 1D gesture recognition, hand detection, volume or height control, relative position of linear actuators, or for user proximity detection for IoT devices.
+
+Check out this Brick Breaker game that we hacked together using a similar sensor.
+
+
+
+
+#### Specification
+
+* Light Source: VCSEL / 850 nm
+* Field of Illumination: 29-degree @ 1/e2
+* Field of View: 55-degree @ 1/e2
+* Measurement Range: 100-2000mm
+* Refresh Rate: 10Hz
+* Precision: ±10%
+* Laser Eye Safety: Class 1
+* Current Consumption: 7-15mA
+* IC: RFD77402
+* I2C address: 0x4C
+* Dimensions: 16.5x 26.3mm (with mounting bar). 26.3x10.5mm (without mounting bar)
+* Weight: 1.2g
+
+
+
+
+#### Links
+
+* [RFD77402 Datasheet](https://www.smart-prototyping.com/image/data/NOA-RnD/101891%20TOF/RFD77402DatasheetRev1-8.pdf)
+* [SparkFun RFD77402  Library](https://github.com/sparkfun/SparkFun_RFD77402_Arduino_Library)
+* [Eagle files](https://github.com/ZIOCC/Qwiic_TOF_Module_RFD77402)
+
+
+
+
+
+
+
+> ###### About Zio
+> Zio is a new line of open sourced, compact, and grid layout boards, fully integrated for Arduino and Qwiic ecosystem. Designed ideally for wearables, robotics, small-space limitations or other on the go projects. Check out other awesome Zio products [here](https://www.smart-prototyping.com/Zio).
+
