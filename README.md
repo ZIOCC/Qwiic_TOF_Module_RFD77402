@@ -1,4 +1,4 @@
-# Qwiic_TOF_Module_RFD77402
+# Qwiic TOF Module (RFD77402)
 
 ![](tof-distance-sensor.png)
 
